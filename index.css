@@ -23,10 +23,17 @@ header .users {
     gap: 10px;
     padding: 5px;
     background-color: #111;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory; /* This enables snap on the x-axis */
+    scroll-padding-left: 10px; /* Adds padding to the left while scrolling */
 }
 
 ::-webkit-scrollbar {
     display: none;
+}
+
+header .users .user {
+    scroll-snap-align: start; /* This makes each child snap at the start */
 }
 
 .user {
@@ -59,11 +66,13 @@ main .content {
     display: flex;
     flex-direction: row;
     overflow-x: scroll;
+    scroll-snap-type: x mandatory; /* This enables snap on the x-axis */
 }
 
 main .content .data {
     width: calc(100dvw - 70px);
     height: calc(100dvh - 150px);
+    scroll-snap-align: start; /* This makes each child snap at the start */
 }
 
 main .metadata {
