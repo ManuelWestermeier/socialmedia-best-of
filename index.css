@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    width: 100dvw;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    background-color: #222;
+    color: rgb(220, 220, 220);
+}
+
+header .users {
+    height: 70px;
+    width: calc(100dvw - 10px);
+    overflow-x: scroll;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+    background-color: #111;
+}
+
+/* ::-webkit-scrollbar {
+    display: none;
+} */
+
+.user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 12px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.user img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    border-radius: 25px;
+}
+
+main {
+    height: calc(100dvh - 150px);
+    width: 100dvw;
+    overflow: hidden;
+    display: flex;
+}
+
+main .content {
+    width: calc(100dvw - 70px);
+    height: calc(100dvh - 150px);
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+}
+
+main .content .data {
+    width: calc(100dvw - 70px);
+    height: calc(100dvh - 150px);
+    background-color: white;
+}
+
+main .metadata {
+    width: 50px;
+    padding: 5px;
+    height: calc(100dvh - 150px);
+    display: flex;
+    flex-direction: column;
+}
+
+main .metadata div {
+    margin: auto;
+    background-color: #111;
+    margin: 5px;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 60px;
+    width: calc(100dvw - 10px);
+    padding: 5px;
+    background-color: #111;
+    cursor: pointer;
+}
