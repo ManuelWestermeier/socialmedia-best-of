@@ -11,93 +11,11 @@
 <body>
     <header>
         <div class="users">
-            <div class="user">
-                <img src="img/user.png" alt="user">
-                <span>
-                    Username
-                </span>
-            </div>
-            <div class="user">
-                <img src="img/user.png" alt="user">
-                <span>
-                    Username
-                </span>
-            </div>
-            <div class="user">
-                <img src="img/user.png" alt="user">
-                <span>
-                    Username
-                </span>
-            </div>
-            <div class="user">
-                <img src="img/user.png" alt="user">
-                <span>
-                    Username
-                </span>
-            </div>
-            <div class="user">
-                <img src="img/user.png" alt="user">
-                <span>
-                    Username
-                </span>
-            </div>
-            <div class="user">
-                <img src="img/user.png" alt="user">
-                <span>
-                    Username
-                </span>
-            </div>
-            <div class="user">
-                <img src="img/user.png" alt="user">
-                <span>
-                    Username
-                </span>
-            </div>
-            <div class="user">
-                <img src="img/user.png" alt="user">
-                <span>
-                    Username
-                </span>
-            </div>
-            <div class="user">
-                <img src="img/user.png" alt="user">
-                <span>
-                    Username
-                </span>
-            </div>
-            <div class="user">
-                <img src="img/user.png" alt="user">
-                <span>
-                    Username
-                </span>
-            </div>
-            <div class="user">
-                <img src="img/user.png" alt="user">
-                <span>
-                    Username
-                </span>
-            </div>
-            <div class="user">
-                <img src="img/user.png" alt="user">
-                <span>
-                    Username
-                </span>
-            </div>
-            <div class="user">
-                <img src="img/user.png" alt="user">
-                <span>
-                    Username
-                </span>
-            </div>
         </div>
     </header>
     <main>
         <div class="content">
-            <img class="data" src="img/img1.png"></img>
-            <img class="data" src="img/img1.png"></img>
-            <img class="data" src="img/img1.png"></img>
-            <img class="data" src="img/img1.png"></img>
-            <img class="data" src="img/img1.png"></img>
+
         </div>
         <div class="metadata">
             <div>👍</div>
@@ -107,7 +25,7 @@
             <div>D</div>
             <div>L</div>
             <div class="user">
-                <img src="img/user.png" alt="user">
+                <img src="https://picsum.photos/1000/500?shj" alt="user">
                 <span>
                     Username
                 </span>
@@ -118,15 +36,15 @@
         <div>
             HOME
         </div>
-        
+
         <div>
             USER
         </div>
-        
+
         <div>
             SEARCH
         </div>
-        
+
         <div>
             YOU
         </div>
@@ -134,6 +52,24 @@
             SETTINGS
         </div>
     </footer>
+    <script>
+        const usersElem = document.querySelector(".users")
+        for (let index = 0; index < 30; index++) {
+            usersElem.innerHTML += `<div class="user">
+                <img src="https://picsum.photos/50/50?iindexa=${index}" alt="user">
+                <span>
+                    Username
+                </span>
+        </div>`
+        }
+        const contentElem = document.querySelector(".content")
+
+        for (let index = 0; index < 5; index++) {
+            contentElem.innerHTML += `<div class="user">
+                <img class="data" src="https://picsum.photos/1000/1000?iindexas=${index}" alt="data"></img>
+            </div>`
+        }
+    </script>
 </body>
 
 </html>

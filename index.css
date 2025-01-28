@@ -25,9 +25,9 @@ header .users {
     background-color: #111;
 }
 
-/* ::-webkit-scrollbar {
+::-webkit-scrollbar {
     display: none;
-} */
+}
 
 .user {
     display: flex;
@@ -64,7 +64,6 @@ main .content {
 main .content .data {
     width: calc(100dvw - 70px);
     height: calc(100dvh - 150px);
-    background-color: white;
 }
 
 main .metadata {
